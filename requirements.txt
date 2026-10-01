@@ -1,0 +1,8 @@
+pandas
+numpy
+scipy
+pydantic
+google-genai
+python-dotenv
+pytest
+groq

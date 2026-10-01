@@ -1,0 +1,2088 @@
+{
+  "stage0": {
+    "total": 840,
+    "relevant": 800,
+    "possibly": 3,
+    "irrelevant": 37,
+    "insufficient": 0,
+    "ambiguous": 0,
+    "exact_dup_all": 28,
+    "exact_dup_relevant": 3,
+    "near_dup_records": 222,
+    "near_dup_extra": 123,
+    "low_info": 40,
+    "offtopic_topics": {
+      "settings": 7,
+      "storage": 6,
+      "sharing": 5,
+      "battery": 4,
+      "editing_ui": 4,
+      "deleted_photo_restore": 3,
+      "backup": 3,
+      "printing": 2,
+      "face_grouping_defect": 2,
+      "editing_defect": 2,
+      "collage": 2
+    },
+    "n_unique_sentences": 90,
+    "opener_mix": {
+      "": 800,
+      "affect_frustration": 0,
+      "community_solicit": 0,
+      "effort_claim": 0,
+      "help_advice": 0,
+      "help_request": 0,
+      "help_trouble": 0,
+      "request_to_vendor": 0
+    },
+    "repeated_authors": 840,
+    "source_mix": {
+      "Google Play Store": 180,
+      "Reddit": 162,
+      "Google Photos Community": 144,
+      "Apple App Store": 114,
+      "Social media": 76,
+      "YouTube comments": 71,
+      "Forums": 53
+    },
+    "date_min": "",
+    "date_max": ""
+  },
+  "stage1": {
+    "object_class": {
+      "family_person": 183,
+      "document_screenshot": 161,
+      "event_social": 134,
+      "medical": 121,
+      "travel_place": 121,
+      "physical_object": 54,
+      "unspecified_object": 26
+    },
+    "remembered": {
+      "people": 200,
+      "visual_appearance": 134,
+      "approximate_time": 126,
+      "activity": 119,
+      "story": 82,
+      "object": 78,
+      "situation": 73,
+      "place": 71,
+      "recognition_ability": 68,
+      "color": 64,
+      "setting": 64,
+      "existence": 63
+    },
+    "forgotten": {
+      "none_named": 206,
+      "object_name": 78,
+      "date": 73,
+      "place_name": 71,
+      "searchable_keyword": 64,
+      "exact_day": 64,
+      "album": 63,
+      "original_retrieval_path": 63,
+      "month": 62,
+      "exact_wording": 56
+    },
+    "forgotten_family": {
+      "don't explicitly state": 206,
+      "time precision": 199,
+      "name": 149,
+      "search keyword": 64,
+      "album / organisation": 63,
+      "how it was originally found": 63,
+      "exact wording": 56
+    },
+    "memory_code": {
+      "": 800,
+      "M01_story_over_metadata": 0,
+      "M02_object_look_not_name": 0,
+      "M03_people_situation_not_date": 0,
+      "M04_place_general_not_name": 0,
+      "M05_recognize_cannot_narrow": 0,
+      "M06_color_setting_people_no_keyword": 0,
+      "M07_approx_time_not_day": 0,
+      "M08_people_activity_not_album": 0,
+      "M09_exists_not_original_path": 0,
+      "M10_year_not_month": 0,
+      "M11_visual_detail_hard_to_describe": 0,
+      "M12_activity_not_exact_words": 0
+    },
+    "behavior_code": {
+      "": 800,
+      "B01_person_place_search": 0,
+      "B02_text_in_image_search": 0,
+      "B03_date_search_too_many": 0,
+      "B04_open_results_one_by_one": 0,
+      "B05_different_wording": 0,
+      "B06_object_keyword": 0,
+      "B07_switch_terms_albums": 0,
+      "B08_other_device_or_app": 0,
+      "B09_person_then_browse": 0,
+      "B10_gave_up_asked_someone": 0,
+      "B11_timeline_manual": 0,
+      "B12_could_not_find": 0,
+      "B13_large_thumbnail_set": 0,
+      "B14_similar_not_exact": 0,
+      "B15_found_after_several_attempts": 0,
+      "B16_date_range_compare": 0,
+      "B17_several_related_words": 0,
+      "B18_keywords_then_scroll": 0
+    },
+    "closer_code": {
+      "C01_recognize_but_access_hard": 0,
+      "C02_thousands_of_images": 0,
+      "C03_years_of_use": 0,
+      "C04_easier_with_precise_identifier": 0,
+      "C05_story_over_metadata": 0,
+      "C06_knows_photo_exists": 0,
+      "C07_finding_not_taking": 0,
+      "C08_plausible_cannot_tell": 0
+    },
+    "no_closer": 800,
+    "retrieval_state": {
+      "exit_path": 341,
+      "recovery_dependent": 284,
+      "candidate_inspection": 120,
+      "first_attempt": 55
+    },
+    "outcome": {
+      "failed": 140,
+      "found_after_browsing": 129,
+      "similar_uncertain": 120,
+      "abandoned": 115,
+      "found_with_effort": 114,
+      "external_workaround": 86,
+      "found_quickly": 55,
+      "found_after_reformulation": 41
+    },
+    "state_x_outcome": {
+      "candidate_inspection": {
+        "abandoned": 0,
+        "external_workaround": 0,
+        "failed": 0,
+        "found_after_browsing": 0,
+        "found_after_reformulation": 0,
+        "found_quickly": 0,
+        "found_with_effort": 0,
+        "similar_uncertain": 120
+      },
+      "exit_path": {
+        "abandoned": 115,
+        "external_workaround": 86,
+        "failed": 140,
+        "found_after_browsing": 0,
+        "found_after_reformulation": 0,
+        "found_quickly": 0,
+        "found_with_effort": 0,
+        "similar_uncertain": 0
+      },
+      "first_attempt": {
+        "abandoned": 0,
+        "external_workaround": 0,
+        "failed": 0,
+        "found_after_browsing": 0,
+        "found_after_reformulation": 0,
+        "found_quickly": 55,
+        "found_with_effort": 0,
+        "similar_uncertain": 0
+      },
+      "recovery_dependent": {
+        "abandoned": 0,
+        "external_workaround": 0,
+        "failed": 0,
+        "found_after_browsing": 129,
+        "found_after_reformulation": 41,
+        "found_quickly": 0,
+        "found_with_effort": 114,
+        "similar_uncertain": 0
+      }
+    },
+    "signals": {
+      "browsing": 234,
+      "uncertainty": 177,
+      "strategy_switch": 166,
+      "large_candidate_set": 149,
+      "repeated_attempts": 146,
+      "failure": 140,
+      "external_workaround": 130,
+      "abandonment": 115,
+      "reformulation": 99,
+      "candidate_inspection": 86
+    },
+    "n_with_signal": 748,
+    "n_with_2plus": 510,
+    "express_barrier": 322,
+    "outcome_stated": 800
+  },
+  "journey": {
+    "touched": {
+      "REMEMBER": 800,
+      "EXPRESS": 566,
+      "MATCH": 120,
+      "RECOGNIZE": 120,
+      "RECOVER": 661
+    },
+    "breakdown": {
+      "REMEMBER": {
+        "n": 594,
+        "basis": "memory sentence names information the user lacks (M02-M04, M06-M10, M12)"
+      },
+      "EXPRESS": {
+        "n": 322,
+        "basis": "memory cannot be turned into keyword/name/wording/description/narrowing (M02,M05,M06,M11,M12) or user contrasts with precise identifiers (C04)"
+      },
+      "MATCH": {
+        "n": 0,
+        "basis": "date search returned too many results (B03) or many plausible results (C08); product output is otherwise rarely described"
+      },
+      "RECOGNIZE": {
+        "n": 0,
+        "basis": "one-by-one opening, timeline/thumbnail scan, date-range comparison, similar-not-exact, cannot tell which is right (B04,B11,B13,B14,B16,C08)"
+      },
+      "RECOVER": {
+        "n": 0,
+        "basis": "reformulation, switching, browsing fallback, several attempts, other app, gave up, failed (B05,B07-B10,B12,B15,B17,B18)"
+      }
+    },
+    "top_paths": {
+      "REMEMBER > EXPRESS > RECOVER": 484,
+      "REMEMBER > RECOVER": 141,
+      "REMEMBER > MATCH > RECOGNIZE": 54,
+      "REMEMBER": 39,
+      "REMEMBER > EXPRESS > MATCH > RECOGNIZE > RECOVER": 36,
+      "REMEMBER > EXPRESS > MATCH > RECOGNIZE": 30,
+      "REMEMBER > EXPRESS": 16
+    },
+    "n_paths": 7
+  },
+  "needs": {
+    "N1 Retrieve a photo when the date is only approximately known": {
+      "n": 0,
+      "of": 800,
+      "pct": 0.0,
+      "example_ids": [],
+      "profile": {
+        "n": 0,
+        "outcomes": {
+          "found_with_effort": 0,
+          "similar_uncertain": 0,
+          "failed": 0,
+          "abandoned": 0,
+          "external_workaround": 0,
+          "unknown": 0
+        },
+        "express_barrier": 0,
+        "recognition_retained": 0,
+        "cannot_confirm": 0,
+        "knows_exists": 0,
+        "with_severity_signal": 0,
+        "with_2plus_signals": 0,
+        "top_behaviors": [],
+        "signal_counts": {},
+        "stage_counts": {
+          "REMEMBER": 0,
+          "EXPRESS": 0,
+          "MATCH": 0,
+          "RECOGNIZE": 0,
+          "RECOVER": 0
+        },
+        "remembered_mix": {},
+        "large_library_stated": 0,
+        "found_quickly": 0,
+        "object_mix": {},
+        "forgotten_mix": {}
+      }
+    },
+    "N2 Retrieve a photo remembered by appearance/gist but lacking a name, keyword or wording": {
+      "n": 0,
+      "of": 800,
+      "pct": 0.0,
+      "example_ids": [],
+      "profile": {
+        "n": 0,
+        "outcomes": {
+          "found_with_effort": 0,
+          "similar_uncertain": 0,
+          "failed": 0,
+          "abandoned": 0,
+          "external_workaround": 0,
+          "unknown": 0
+        },
+        "express_barrier": 0,
+        "recognition_retained": 0,
+        "cannot_confirm": 0,
+        "knows_exists": 0,
+        "with_severity_signal": 0,
+        "with_2plus_signals": 0,
+        "top_behaviors": [],
+        "signal_counts": {},
+        "stage_counts": {
+          "REMEMBER": 0,
+          "EXPRESS": 0,
+          "MATCH": 0,
+          "RECOGNIZE": 0,
+          "RECOVER": 0
+        },
+        "remembered_mix": {},
+        "large_library_stated": 0,
+        "found_quickly": 0,
+        "object_mix": {},
+        "forgotten_mix": {}
+      }
+    },
+    "N3 Retrieve a photo remembered by story, people and activity but lacking an organising handle (album)": {
+      "n": 0,
+      "of": 800,
+      "pct": 0.0,
+      "example_ids": [],
+      "profile": {
+        "n": 0,
+        "outcomes": {
+          "found_with_effort": 0,
+          "similar_uncertain": 0,
+          "failed": 0,
+          "abandoned": 0,
+          "external_workaround": 0,
+          "unknown": 0
+        },
+        "express_barrier": 0,
+        "recognition_retained": 0,
+        "cannot_confirm": 0,
+        "knows_exists": 0,
+        "with_severity_signal": 0,
+        "with_2plus_signals": 0,
+        "top_behaviors": [],
+        "signal_counts": {},
+        "stage_counts": {
+          "REMEMBER": 0,
+          "EXPRESS": 0,
+          "MATCH": 0,
+          "RECOGNIZE": 0,
+          "RECOVER": 0
+        },
+        "remembered_mix": {},
+        "large_library_stated": 0,
+        "found_quickly": 0,
+        "object_mix": {},
+        "forgotten_mix": {}
+      }
+    },
+    "N4 Retrieve a place-based memory without the place name": {
+      "n": 0,
+      "of": 800,
+      "pct": 0.0,
+      "example_ids": [],
+      "profile": {
+        "n": 0,
+        "outcomes": {
+          "found_with_effort": 0,
+          "similar_uncertain": 0,
+          "failed": 0,
+          "abandoned": 0,
+          "external_workaround": 0,
+          "unknown": 0
+        },
+        "express_barrier": 0,
+        "recognition_retained": 0,
+        "cannot_confirm": 0,
+        "knows_exists": 0,
+        "with_severity_signal": 0,
+        "with_2plus_signals": 0,
+        "top_behaviors": [],
+        "signal_counts": {},
+        "stage_counts": {
+          "REMEMBER": 0,
+          "EXPRESS": 0,
+          "MATCH": 0,
+          "RECOGNIZE": 0,
+          "RECOVER": 0
+        },
+        "remembered_mix": {},
+        "large_library_stated": 0,
+        "found_quickly": 0,
+        "object_mix": {},
+        "forgotten_mix": {}
+      }
+    },
+    "N5 Re-find a photo known to exist after losing the original path to it": {
+      "n": 0,
+      "of": 800,
+      "pct": 0.0,
+      "example_ids": [],
+      "profile": {
+        "n": 0,
+        "outcomes": {
+          "found_with_effort": 0,
+          "similar_uncertain": 0,
+          "failed": 0,
+          "abandoned": 0,
+          "external_workaround": 0,
+          "unknown": 0
+        },
+        "express_barrier": 0,
+        "recognition_retained": 0,
+        "cannot_confirm": 0,
+        "knows_exists": 0,
+        "with_severity_signal": 0,
+        "with_2plus_signals": 0,
+        "top_behaviors": [],
+        "signal_counts": {},
+        "stage_counts": {
+          "REMEMBER": 0,
+          "EXPRESS": 0,
+          "MATCH": 0,
+          "RECOGNIZE": 0,
+          "RECOVER": 0
+        },
+        "remembered_mix": {},
+        "large_library_stated": 0,
+        "found_quickly": 0,
+        "object_mix": {},
+        "forgotten_mix": {}
+      }
+    },
+    "N6 Recognise/verify the right photo among plausible candidates": {
+      "n": 120,
+      "of": 800,
+      "pct": 15.0,
+      "example_ids": [
+        "REC-0001",
+        "REC-0004",
+        "REC-0007"
+      ],
+      "profile": {
+        "n": 120,
+        "outcomes": {
+          "found_with_effort": 0,
+          "similar_uncertain": 120,
+          "failed": 0,
+          "abandoned": 0,
+          "external_workaround": 0,
+          "unknown": 0
+        },
+        "express_barrier": 41,
+        "recognition_retained": 0,
+        "cannot_confirm": 0,
+        "knows_exists": 0,
+        "with_severity_signal": 120,
+        "with_2plus_signals": 64,
+        "top_behaviors": [],
+        "signal_counts": {
+          "uncertainty": 120,
+          "large_candidate_set": 22,
+          "browsing": 20,
+          "strategy_switch": 17,
+          "candidate_inspection": 15,
+          "reformulation": 8,
+          "repeated_attempts": 5
+        },
+        "stage_counts": {
+          "REMEMBER": 120,
+          "EXPRESS": 66,
+          "MATCH": 120,
+          "RECOGNIZE": 120,
+          "RECOVER": 36
+        },
+        "remembered_mix": {
+          "people": 33,
+          "approximate_time": 26,
+          "visual_appearance": 18,
+          "place": 16,
+          "color": 13,
+          "setting": 13,
+          "activity": 11,
+          "situation": 11,
+          "story": 10,
+          "recognition_ability": 8,
+          "object": 8,
+          "existence": 7
+        },
+        "large_library_stated": 0,
+        "found_quickly": 0,
+        "object_mix": {
+          "family_person": 27,
+          "document_screenshot": 22,
+          "event_social": 20,
+          "travel_place": 20,
+          "medical": 19,
+          "physical_object": 8,
+          "unspecified_object": 4
+        },
+        "forgotten_mix": {
+          "time precision": 37,
+          "don't explicitly state": 28,
+          "name": 24,
+          "search keyword": 13,
+          "album / organisation": 9,
+          "how it was originally found": 7,
+          "exact wording": 2
+        }
+      }
+    },
+    "N7 Reach a photo the user says they would recognise but cannot narrow towards": {
+      "n": 0,
+      "of": 800,
+      "pct": 0.0,
+      "example_ids": [],
+      "profile": {
+        "n": 0,
+        "outcomes": {
+          "found_with_effort": 0,
+          "similar_uncertain": 0,
+          "failed": 0,
+          "abandoned": 0,
+          "external_workaround": 0,
+          "unknown": 0
+        },
+        "express_barrier": 0,
+        "recognition_retained": 0,
+        "cannot_confirm": 0,
+        "knows_exists": 0,
+        "with_severity_signal": 0,
+        "with_2plus_signals": 0,
+        "top_behaviors": [],
+        "signal_counts": {},
+        "stage_counts": {
+          "REMEMBER": 0,
+          "EXPRESS": 0,
+          "MATCH": 0,
+          "RECOGNIZE": 0,
+          "RECOVER": 0
+        },
+        "remembered_mix": {},
+        "large_library_stated": 0,
+        "found_quickly": 0,
+        "object_mix": {},
+        "forgotten_mix": {}
+      }
+    },
+    "N8 Recover after a first attempt did not resolve": {
+      "n": 625,
+      "of": 800,
+      "pct": 78.1,
+      "example_ids": [
+        "REC-0002",
+        "REC-0003",
+        "REC-0005"
+      ],
+      "profile": {
+        "n": 625,
+        "outcomes": {
+          "found_with_effort": 114,
+          "similar_uncertain": 0,
+          "failed": 140,
+          "abandoned": 115,
+          "external_workaround": 86,
+          "unknown": 0
+        },
+        "express_barrier": 265,
+        "recognition_retained": 0,
+        "cannot_confirm": 0,
+        "knows_exists": 0,
+        "with_severity_signal": 625,
+        "with_2plus_signals": 443,
+        "top_behaviors": [],
+        "signal_counts": {
+          "browsing": 214,
+          "strategy_switch": 149,
+          "repeated_attempts": 141,
+          "failure": 140,
+          "external_workaround": 130,
+          "large_candidate_set": 124,
+          "abandonment": 115,
+          "reformulation": 91,
+          "candidate_inspection": 71,
+          "uncertainty": 54
+        },
+        "stage_counts": {
+          "REMEMBER": 625,
+          "EXPRESS": 484,
+          "MATCH": 0,
+          "RECOGNIZE": 0,
+          "RECOVER": 625
+        },
+        "remembered_mix": {
+          "people": 151,
+          "visual_appearance": 110,
+          "activity": 99,
+          "approximate_time": 90,
+          "story": 67,
+          "object": 65,
+          "recognition_ability": 57,
+          "situation": 56,
+          "existence": 51,
+          "place": 48,
+          "color": 47,
+          "setting": 47
+        },
+        "large_library_stated": 0,
+        "found_quickly": 0,
+        "object_mix": {
+          "family_person": 145,
+          "document_screenshot": 128,
+          "event_social": 102,
+          "medical": 94,
+          "travel_place": 92,
+          "physical_object": 44,
+          "unspecified_object": 20
+        },
+        "forgotten_mix": {
+          "don't explicitly state": 169,
+          "time precision": 146,
+          "name": 113,
+          "exact wording": 51,
+          "how it was originally found": 51,
+          "album / organisation": 48,
+          "search keyword": 47
+        }
+      }
+    },
+    "N9 Retrieve an information-bearing image (document, screenshot, prescription)": {
+      "n": 257,
+      "of": 800,
+      "pct": 32.1,
+      "example_ids": [
+        "REC-0002",
+        "REC-0004",
+        "REC-0008"
+      ],
+      "profile": {
+        "n": 257,
+        "outcomes": {
+          "found_with_effort": 38,
+          "similar_uncertain": 37,
+          "failed": 49,
+          "abandoned": 36,
+          "external_workaround": 28,
+          "unknown": 0
+        },
+        "express_barrier": 106,
+        "recognition_retained": 0,
+        "cannot_confirm": 0,
+        "knows_exists": 0,
+        "with_severity_signal": 243,
+        "with_2plus_signals": 163,
+        "top_behaviors": [],
+        "signal_counts": {
+          "browsing": 69,
+          "uncertainty": 64,
+          "strategy_switch": 62,
+          "large_candidate_set": 49,
+          "failure": 49,
+          "repeated_attempts": 47,
+          "external_workaround": 40,
+          "abandonment": 36,
+          "reformulation": 33,
+          "candidate_inspection": 23
+        },
+        "stage_counts": {
+          "REMEMBER": 257,
+          "EXPRESS": 186,
+          "MATCH": 37,
+          "RECOGNIZE": 37,
+          "RECOVER": 214
+        },
+        "remembered_mix": {
+          "people": 68,
+          "visual_appearance": 51,
+          "activity": 44,
+          "approximate_time": 32,
+          "story": 30,
+          "object": 29,
+          "place": 25,
+          "color": 23,
+          "setting": 23,
+          "existence": 19,
+          "situation": 19,
+          "recognition_ability": 14
+        },
+        "large_library_stated": 0,
+        "found_quickly": 0,
+        "object_mix": {
+          "document_screenshot": 161,
+          "medical": 96
+        },
+        "forgotten_mix": {
+          "don't explicitly state": 66,
+          "name": 54,
+          "time precision": 51,
+          "album / organisation": 26,
+          "search keyword": 23,
+          "how it was originally found": 19,
+          "exact wording": 18
+        }
+      }
+    }
+  },
+  "segments": {
+    "SEG-1 Exit-path retrievers": {
+      "n": 341,
+      "of": 800,
+      "pct": 42.6,
+      "example_ids": [
+        "REC-0002",
+        "REC-0003",
+        "REC-0010"
+      ],
+      "profile": {
+        "n": 341,
+        "outcomes": {
+          "found_with_effort": 0,
+          "similar_uncertain": 0,
+          "failed": 140,
+          "abandoned": 115,
+          "external_workaround": 86,
+          "unknown": 0
+        },
+        "express_barrier": 127,
+        "recognition_retained": 0,
+        "cannot_confirm": 0,
+        "knows_exists": 0,
+        "with_severity_signal": 341,
+        "with_2plus_signals": 251,
+        "top_behaviors": [],
+        "signal_counts": {
+          "failure": 140,
+          "external_workaround": 130,
+          "abandonment": 115,
+          "strategy_switch": 99,
+          "browsing": 56,
+          "large_candidate_set": 52,
+          "reformulation": 34,
+          "uncertainty": 27,
+          "candidate_inspection": 27,
+          "repeated_attempts": 13
+        },
+        "stage_counts": {
+          "REMEMBER": 341,
+          "EXPRESS": 227,
+          "MATCH": 0,
+          "RECOGNIZE": 0,
+          "RECOVER": 341
+        },
+        "remembered_mix": {
+          "people": 83,
+          "approximate_time": 58,
+          "visual_appearance": 56,
+          "activity": 52,
+          "story": 38,
+          "situation": 35,
+          "object": 34,
+          "place": 29,
+          "existence": 27,
+          "recognition_ability": 25,
+          "color": 21,
+          "setting": 21
+        },
+        "large_library_stated": 0,
+        "found_quickly": 0,
+        "object_mix": {
+          "family_person": 75,
+          "document_screenshot": 64,
+          "medical": 60,
+          "event_social": 53,
+          "travel_place": 50,
+          "physical_object": 27,
+          "unspecified_object": 12
+        },
+        "forgotten_mix": {
+          "time precision": 93,
+          "don't explicitly state": 85,
+          "name": 63,
+          "album / organisation": 27,
+          "how it was originally found": 27,
+          "exact wording": 25,
+          "search keyword": 21
+        }
+      }
+    },
+    "SEG-2 Recovery-dependent retrievers": {
+      "n": 284,
+      "of": 800,
+      "pct": 35.5,
+      "example_ids": [
+        "REC-0005",
+        "REC-0006",
+        "REC-0008"
+      ],
+      "profile": {
+        "n": 284,
+        "outcomes": {
+          "found_with_effort": 114,
+          "similar_uncertain": 0,
+          "failed": 0,
+          "abandoned": 0,
+          "external_workaround": 0,
+          "unknown": 0
+        },
+        "express_barrier": 138,
+        "recognition_retained": 0,
+        "cannot_confirm": 0,
+        "knows_exists": 0,
+        "with_severity_signal": 284,
+        "with_2plus_signals": 192,
+        "top_behaviors": [],
+        "signal_counts": {
+          "browsing": 158,
+          "repeated_attempts": 128,
+          "large_candidate_set": 72,
+          "reformulation": 57,
+          "strategy_switch": 50,
+          "candidate_inspection": 44,
+          "uncertainty": 27
+        },
+        "stage_counts": {
+          "REMEMBER": 284,
+          "EXPRESS": 257,
+          "MATCH": 0,
+          "RECOGNIZE": 0,
+          "RECOVER": 284
+        },
+        "remembered_mix": {
+          "people": 68,
+          "visual_appearance": 54,
+          "activity": 47,
+          "recognition_ability": 32,
+          "approximate_time": 32,
+          "object": 31,
+          "story": 29,
+          "color": 26,
+          "setting": 26,
+          "existence": 24,
+          "situation": 21,
+          "place": 19
+        },
+        "large_library_stated": 0,
+        "found_quickly": 0,
+        "object_mix": {
+          "family_person": 70,
+          "document_screenshot": 64,
+          "event_social": 49,
+          "travel_place": 42,
+          "medical": 34,
+          "physical_object": 17,
+          "unspecified_object": 8
+        },
+        "forgotten_mix": {
+          "don't explicitly state": 84,
+          "time precision": 53,
+          "name": 50,
+          "exact wording": 26,
+          "search keyword": 26,
+          "how it was originally found": 24,
+          "album / organisation": 21
+        }
+      }
+    },
+    "SEG-3 Candidate-inspection-dependent retrievers": {
+      "n": 120,
+      "of": 800,
+      "pct": 15.0,
+      "example_ids": [
+        "REC-0001",
+        "REC-0004",
+        "REC-0007"
+      ],
+      "profile": {
+        "n": 120,
+        "outcomes": {
+          "found_with_effort": 0,
+          "similar_uncertain": 120,
+          "failed": 0,
+          "abandoned": 0,
+          "external_workaround": 0,
+          "unknown": 0
+        },
+        "express_barrier": 41,
+        "recognition_retained": 0,
+        "cannot_confirm": 0,
+        "knows_exists": 0,
+        "with_severity_signal": 120,
+        "with_2plus_signals": 64,
+        "top_behaviors": [],
+        "signal_counts": {
+          "uncertainty": 120,
+          "large_candidate_set": 22,
+          "browsing": 20,
+          "strategy_switch": 17,
+          "candidate_inspection": 15,
+          "reformulation": 8,
+          "repeated_attempts": 5
+        },
+        "stage_counts": {
+          "REMEMBER": 120,
+          "EXPRESS": 66,
+          "MATCH": 120,
+          "RECOGNIZE": 120,
+          "RECOVER": 36
+        },
+        "remembered_mix": {
+          "people": 33,
+          "approximate_time": 26,
+          "visual_appearance": 18,
+          "place": 16,
+          "color": 13,
+          "setting": 13,
+          "activity": 11,
+          "situation": 11,
+          "story": 10,
+          "recognition_ability": 8,
+          "object": 8,
+          "existence": 7
+        },
+        "large_library_stated": 0,
+        "found_quickly": 0,
+        "object_mix": {
+          "family_person": 27,
+          "document_screenshot": 22,
+          "event_social": 20,
+          "travel_place": 20,
+          "medical": 19,
+          "physical_object": 8,
+          "unspecified_object": 4
+        },
+        "forgotten_mix": {
+          "time precision": 37,
+          "don't explicitly state": 28,
+          "name": 24,
+          "search keyword": 13,
+          "album / organisation": 9,
+          "how it was originally found": 7,
+          "exact wording": 2
+        }
+      }
+    },
+    "SEG-4 First-attempt-stage retrievers": {
+      "n": 55,
+      "of": 800,
+      "pct": 6.9,
+      "example_ids": [
+        "REC-0025",
+        "REC-0029",
+        "REC-0040"
+      ],
+      "profile": {
+        "n": 55,
+        "outcomes": {
+          "found_with_effort": 0,
+          "similar_uncertain": 0,
+          "failed": 0,
+          "abandoned": 0,
+          "external_workaround": 0,
+          "unknown": 0
+        },
+        "express_barrier": 16,
+        "recognition_retained": 0,
+        "cannot_confirm": 0,
+        "knows_exists": 0,
+        "with_severity_signal": 3,
+        "with_2plus_signals": 3,
+        "top_behaviors": [],
+        "signal_counts": {
+          "uncertainty": 3,
+          "large_candidate_set": 3
+        },
+        "stage_counts": {
+          "REMEMBER": 55,
+          "EXPRESS": 16,
+          "MATCH": 0,
+          "RECOGNIZE": 0,
+          "RECOVER": 0
+        },
+        "remembered_mix": {
+          "people": 16,
+          "approximate_time": 10,
+          "activity": 9,
+          "place": 7,
+          "visual_appearance": 6,
+          "situation": 6,
+          "existence": 5,
+          "story": 5,
+          "object": 5,
+          "color": 4,
+          "setting": 4,
+          "recognition_ability": 3
+        },
+        "large_library_stated": 0,
+        "found_quickly": 0,
+        "object_mix": {
+          "event_social": 12,
+          "document_screenshot": 11,
+          "family_person": 11,
+          "travel_place": 9,
+          "medical": 8,
+          "unspecified_object": 2,
+          "physical_object": 2
+        },
+        "forgotten_mix": {
+          "time precision": 16,
+          "name": 12,
+          "don't explicitly state": 9,
+          "album / organisation": 6,
+          "how it was originally found": 5,
+          "search keyword": 4,
+          "exact wording": 3
+        }
+      }
+    },
+    "SEG-T Effortful-path retrievers (SEG-2 or SEG-3)": {
+      "n": 404,
+      "of": 800,
+      "pct": 50.5,
+      "example_ids": [
+        "REC-0001",
+        "REC-0004",
+        "REC-0005"
+      ],
+      "profile": {
+        "n": 404,
+        "outcomes": {
+          "found_with_effort": 114,
+          "similar_uncertain": 120,
+          "failed": 0,
+          "abandoned": 0,
+          "external_workaround": 0,
+          "unknown": 0
+        },
+        "express_barrier": 179,
+        "recognition_retained": 0,
+        "cannot_confirm": 0,
+        "knows_exists": 0,
+        "with_severity_signal": 404,
+        "with_2plus_signals": 256,
+        "top_behaviors": [],
+        "signal_counts": {
+          "browsing": 178,
+          "uncertainty": 147,
+          "repeated_attempts": 133,
+          "large_candidate_set": 94,
+          "strategy_switch": 67,
+          "reformulation": 65,
+          "candidate_inspection": 59
+        },
+        "stage_counts": {
+          "REMEMBER": 404,
+          "EXPRESS": 323,
+          "MATCH": 120,
+          "RECOGNIZE": 120,
+          "RECOVER": 320
+        },
+        "remembered_mix": {
+          "people": 101,
+          "visual_appearance": 72,
+          "activity": 58,
+          "approximate_time": 58,
+          "recognition_ability": 40,
+          "color": 39,
+          "setting": 39,
+          "object": 39,
+          "story": 39,
+          "place": 35,
+          "situation": 32,
+          "existence": 31
+        },
+        "large_library_stated": 0,
+        "found_quickly": 0,
+        "object_mix": {
+          "family_person": 97,
+          "document_screenshot": 86,
+          "event_social": 69,
+          "travel_place": 62,
+          "medical": 53,
+          "physical_object": 25,
+          "unspecified_object": 12
+        },
+        "forgotten_mix": {
+          "don't explicitly state": 112,
+          "time precision": 90,
+          "name": 74,
+          "search keyword": 39,
+          "how it was originally found": 31,
+          "album / organisation": 30,
+          "exact wording": 28
+        }
+      }
+    }
+  },
+  "opps": {
+    "O1 Memory expression": {
+      "n": 322,
+      "of": 800,
+      "pct": 40.2,
+      "example_ids": [
+        "REC-0006",
+        "REC-0008",
+        "REC-0009"
+      ],
+      "profile": {
+        "n": 322,
+        "outcomes": {
+          "found_with_effort": 56,
+          "similar_uncertain": 41,
+          "failed": 53,
+          "abandoned": 39,
+          "external_workaround": 35,
+          "unknown": 0
+        },
+        "express_barrier": 322,
+        "recognition_retained": 0,
+        "cannot_confirm": 0,
+        "knows_exists": 0,
+        "with_severity_signal": 306,
+        "with_2plus_signals": 210,
+        "top_behaviors": [],
+        "signal_counts": {
+          "browsing": 98,
+          "repeated_attempts": 70,
+          "strategy_switch": 65,
+          "uncertainty": 63,
+          "large_candidate_set": 61,
+          "failure": 53,
+          "external_workaround": 52,
+          "candidate_inspection": 41,
+          "reformulation": 41,
+          "abandonment": 39
+        },
+        "stage_counts": {
+          "REMEMBER": 322,
+          "EXPRESS": 322,
+          "MATCH": 41,
+          "RECOGNIZE": 41,
+          "RECOVER": 276
+        },
+        "remembered_mix": {
+          "visual_appearance": 134,
+          "object": 78,
+          "recognition_ability": 68,
+          "color": 64,
+          "setting": 64,
+          "people": 64,
+          "activity": 56
+        },
+        "large_library_stated": 0,
+        "found_quickly": 0,
+        "object_mix": {
+          "family_person": 71,
+          "document_screenshot": 70,
+          "event_social": 55,
+          "travel_place": 52,
+          "medical": 41,
+          "physical_object": 21,
+          "unspecified_object": 12
+        },
+        "forgotten_mix": {
+          "don't explicitly state": 124,
+          "name": 78,
+          "search keyword": 64,
+          "exact wording": 56
+        }
+      }
+    },
+    "O2 Approximate-time narrowing": {
+      "n": 0,
+      "of": 800,
+      "pct": 0.0,
+      "example_ids": [],
+      "profile": {
+        "n": 0,
+        "outcomes": {
+          "found_with_effort": 0,
+          "similar_uncertain": 0,
+          "failed": 0,
+          "abandoned": 0,
+          "external_workaround": 0,
+          "unknown": 0
+        },
+        "express_barrier": 0,
+        "recognition_retained": 0,
+        "cannot_confirm": 0,
+        "knows_exists": 0,
+        "with_severity_signal": 0,
+        "with_2plus_signals": 0,
+        "top_behaviors": [],
+        "signal_counts": {},
+        "stage_counts": {
+          "REMEMBER": 0,
+          "EXPRESS": 0,
+          "MATCH": 0,
+          "RECOGNIZE": 0,
+          "RECOVER": 0
+        },
+        "remembered_mix": {},
+        "large_library_stated": 0,
+        "found_quickly": 0,
+        "object_mix": {},
+        "forgotten_mix": {}
+      }
+    },
+    "O3 Candidate recognition / verification": {
+      "n": 0,
+      "of": 800,
+      "pct": 0.0,
+      "example_ids": [],
+      "profile": {
+        "n": 0,
+        "outcomes": {
+          "found_with_effort": 0,
+          "similar_uncertain": 0,
+          "failed": 0,
+          "abandoned": 0,
+          "external_workaround": 0,
+          "unknown": 0
+        },
+        "express_barrier": 0,
+        "recognition_retained": 0,
+        "cannot_confirm": 0,
+        "knows_exists": 0,
+        "with_severity_signal": 0,
+        "with_2plus_signals": 0,
+        "top_behaviors": [],
+        "signal_counts": {},
+        "stage_counts": {
+          "REMEMBER": 0,
+          "EXPRESS": 0,
+          "MATCH": 0,
+          "RECOGNIZE": 0,
+          "RECOVER": 0
+        },
+        "remembered_mix": {},
+        "large_library_stated": 0,
+        "found_quickly": 0,
+        "object_mix": {},
+        "forgotten_mix": {}
+      }
+    },
+    "O4 Contextual matching (candidate-set precision)": {
+      "n": 0,
+      "of": 800,
+      "pct": 0.0,
+      "example_ids": [],
+      "profile": {
+        "n": 0,
+        "outcomes": {
+          "found_with_effort": 0,
+          "similar_uncertain": 0,
+          "failed": 0,
+          "abandoned": 0,
+          "external_workaround": 0,
+          "unknown": 0
+        },
+        "express_barrier": 0,
+        "recognition_retained": 0,
+        "cannot_confirm": 0,
+        "knows_exists": 0,
+        "with_severity_signal": 0,
+        "with_2plus_signals": 0,
+        "top_behaviors": [],
+        "signal_counts": {},
+        "stage_counts": {
+          "REMEMBER": 0,
+          "EXPRESS": 0,
+          "MATCH": 0,
+          "RECOGNIZE": 0,
+          "RECOVER": 0
+        },
+        "remembered_mix": {},
+        "large_library_stated": 0,
+        "found_quickly": 0,
+        "object_mix": {},
+        "forgotten_mix": {}
+      }
+    },
+    "O5 Retrieval recovery": {
+      "n": 0,
+      "of": 800,
+      "pct": 0.0,
+      "example_ids": [],
+      "profile": {
+        "n": 0,
+        "outcomes": {
+          "found_with_effort": 0,
+          "similar_uncertain": 0,
+          "failed": 0,
+          "abandoned": 0,
+          "external_workaround": 0,
+          "unknown": 0
+        },
+        "express_barrier": 0,
+        "recognition_retained": 0,
+        "cannot_confirm": 0,
+        "knows_exists": 0,
+        "with_severity_signal": 0,
+        "with_2plus_signals": 0,
+        "top_behaviors": [],
+        "signal_counts": {},
+        "stage_counts": {
+          "REMEMBER": 0,
+          "EXPRESS": 0,
+          "MATCH": 0,
+          "RECOGNIZE": 0,
+          "RECOVER": 0
+        },
+        "remembered_mix": {},
+        "large_library_stated": 0,
+        "found_quickly": 0,
+        "object_mix": {},
+        "forgotten_mix": {}
+      }
+    },
+    "O6 Retrieval-path memory (album / how it was found)": {
+      "n": 0,
+      "of": 800,
+      "pct": 0.0,
+      "example_ids": [],
+      "profile": {
+        "n": 0,
+        "outcomes": {
+          "found_with_effort": 0,
+          "similar_uncertain": 0,
+          "failed": 0,
+          "abandoned": 0,
+          "external_workaround": 0,
+          "unknown": 0
+        },
+        "express_barrier": 0,
+        "recognition_retained": 0,
+        "cannot_confirm": 0,
+        "knows_exists": 0,
+        "with_severity_signal": 0,
+        "with_2plus_signals": 0,
+        "top_behaviors": [],
+        "signal_counts": {},
+        "stage_counts": {
+          "REMEMBER": 0,
+          "EXPRESS": 0,
+          "MATCH": 0,
+          "RECOGNIZE": 0,
+          "RECOVER": 0
+        },
+        "remembered_mix": {},
+        "large_library_stated": 0,
+        "found_quickly": 0,
+        "object_mix": {},
+        "forgotten_mix": {}
+      }
+    },
+    "O7 Corpus / access boundary (indirect evidence)": {
+      "n": 0,
+      "of": 800,
+      "pct": 0.0,
+      "example_ids": [],
+      "profile": {
+        "n": 0,
+        "outcomes": {
+          "found_with_effort": 0,
+          "similar_uncertain": 0,
+          "failed": 0,
+          "abandoned": 0,
+          "external_workaround": 0,
+          "unknown": 0
+        },
+        "express_barrier": 0,
+        "recognition_retained": 0,
+        "cannot_confirm": 0,
+        "knows_exists": 0,
+        "with_severity_signal": 0,
+        "with_2plus_signals": 0,
+        "top_behaviors": [],
+        "signal_counts": {},
+        "stage_counts": {
+          "REMEMBER": 0,
+          "EXPRESS": 0,
+          "MATCH": 0,
+          "RECOGNIZE": 0,
+          "RECOVER": 0
+        },
+        "remembered_mix": {},
+        "large_library_stated": 0,
+        "found_quickly": 0,
+        "object_mix": {},
+        "forgotten_mix": {}
+      }
+    },
+    "O8 Information discovery (knowing what can narrow a search)": {
+      "n": 0,
+      "of": 800,
+      "pct": 0.0,
+      "example_ids": [],
+      "profile": {
+        "n": 0,
+        "outcomes": {
+          "found_with_effort": 0,
+          "similar_uncertain": 0,
+          "failed": 0,
+          "abandoned": 0,
+          "external_workaround": 0,
+          "unknown": 0
+        },
+        "express_barrier": 0,
+        "recognition_retained": 0,
+        "cannot_confirm": 0,
+        "knows_exists": 0,
+        "with_severity_signal": 0,
+        "with_2plus_signals": 0,
+        "top_behaviors": [],
+        "signal_counts": {},
+        "stage_counts": {
+          "REMEMBER": 0,
+          "EXPRESS": 0,
+          "MATCH": 0,
+          "RECOGNIZE": 0,
+          "RECOVER": 0
+        },
+        "remembered_mix": {},
+        "large_library_stated": 0,
+        "found_quickly": 0,
+        "object_mix": {},
+        "forgotten_mix": {}
+      }
+    }
+  },
+  "segment_overlap_with_express": {
+    "SEG-1 Exit-path retrievers": 127,
+    "SEG-2 Recovery-dependent retrievers": 138,
+    "SEG-3 Candidate-inspection-dependent retrievers": 41,
+    "SEG-4 First-attempt-stage retrievers": 16
+  },
+  "opp_overlap": {
+    "O1 Memory expression": {
+      "O1 Memory expression": 322,
+      "O2 Approximate-time narrowing": 0,
+      "O3 Candidate recognition / verification": 0,
+      "O4 Contextual matching (candidate-set precision)": 0,
+      "O5 Retrieval recovery": 0,
+      "O6 Retrieval-path memory (album / how it was found)": 0,
+      "O7 Corpus / access boundary (indirect evidence)": 0,
+      "O8 Information discovery (knowing what can narrow a search)": 0
+    },
+    "O2 Approximate-time narrowing": {
+      "O1 Memory expression": 0,
+      "O2 Approximate-time narrowing": 0,
+      "O3 Candidate recognition / verification": 0,
+      "O4 Contextual matching (candidate-set precision)": 0,
+      "O5 Retrieval recovery": 0,
+      "O6 Retrieval-path memory (album / how it was found)": 0,
+      "O7 Corpus / access boundary (indirect evidence)": 0,
+      "O8 Information discovery (knowing what can narrow a search)": 0
+    },
+    "O3 Candidate recognition / verification": {
+      "O1 Memory expression": 0,
+      "O2 Approximate-time narrowing": 0,
+      "O3 Candidate recognition / verification": 0,
+      "O4 Contextual matching (candidate-set precision)": 0,
+      "O5 Retrieval recovery": 0,
+      "O6 Retrieval-path memory (album / how it was found)": 0,
+      "O7 Corpus / access boundary (indirect evidence)": 0,
+      "O8 Information discovery (knowing what can narrow a search)": 0
+    },
+    "O4 Contextual matching (candidate-set precision)": {
+      "O1 Memory expression": 0,
+      "O2 Approximate-time narrowing": 0,
+      "O3 Candidate recognition / verification": 0,
+      "O4 Contextual matching (candidate-set precision)": 0,
+      "O5 Retrieval recovery": 0,
+      "O6 Retrieval-path memory (album / how it was found)": 0,
+      "O7 Corpus / access boundary (indirect evidence)": 0,
+      "O8 Information discovery (knowing what can narrow a search)": 0
+    },
+    "O5 Retrieval recovery": {
+      "O1 Memory expression": 0,
+      "O2 Approximate-time narrowing": 0,
+      "O3 Candidate recognition / verification": 0,
+      "O4 Contextual matching (candidate-set precision)": 0,
+      "O5 Retrieval recovery": 0,
+      "O6 Retrieval-path memory (album / how it was found)": 0,
+      "O7 Corpus / access boundary (indirect evidence)": 0,
+      "O8 Information discovery (knowing what can narrow a search)": 0
+    },
+    "O6 Retrieval-path memory (album / how it was found)": {
+      "O1 Memory expression": 0,
+      "O2 Approximate-time narrowing": 0,
+      "O3 Candidate recognition / verification": 0,
+      "O4 Contextual matching (candidate-set precision)": 0,
+      "O5 Retrieval recovery": 0,
+      "O6 Retrieval-path memory (album / how it was found)": 0,
+      "O7 Corpus / access boundary (indirect evidence)": 0,
+      "O8 Information discovery (knowing what can narrow a search)": 0
+    },
+    "O7 Corpus / access boundary (indirect evidence)": {
+      "O1 Memory expression": 0,
+      "O2 Approximate-time narrowing": 0,
+      "O3 Candidate recognition / verification": 0,
+      "O4 Contextual matching (candidate-set precision)": 0,
+      "O5 Retrieval recovery": 0,
+      "O6 Retrieval-path memory (album / how it was found)": 0,
+      "O7 Corpus / access boundary (indirect evidence)": 0,
+      "O8 Information discovery (knowing what can narrow a search)": 0
+    },
+    "O8 Information discovery (knowing what can narrow a search)": {
+      "O1 Memory expression": 0,
+      "O2 Approximate-time narrowing": 0,
+      "O3 Candidate recognition / verification": 0,
+      "O4 Contextual matching (candidate-set precision)": 0,
+      "O5 Retrieval recovery": 0,
+      "O6 Retrieval-path memory (album / how it was found)": 0,
+      "O7 Corpus / access boundary (indirect evidence)": 0,
+      "O8 Information discovery (knowing what can narrow a search)": 0
+    }
+  },
+  "opp_union_all": 322,
+  "target": {
+    "n": 404,
+    "of": 800,
+    "pct": 50.5,
+    "profile": {
+      "n": 404,
+      "outcomes": {
+        "found_with_effort": 114,
+        "similar_uncertain": 120,
+        "failed": 0,
+        "abandoned": 0,
+        "external_workaround": 0,
+        "unknown": 0
+      },
+      "express_barrier": 179,
+      "recognition_retained": 0,
+      "cannot_confirm": 0,
+      "knows_exists": 0,
+      "with_severity_signal": 404,
+      "with_2plus_signals": 256,
+      "top_behaviors": [],
+      "signal_counts": {
+        "browsing": 178,
+        "uncertainty": 147,
+        "repeated_attempts": 133,
+        "large_candidate_set": 94,
+        "strategy_switch": 67,
+        "reformulation": 65,
+        "candidate_inspection": 59
+      },
+      "stage_counts": {
+        "REMEMBER": 404,
+        "EXPRESS": 323,
+        "MATCH": 120,
+        "RECOGNIZE": 120,
+        "RECOVER": 320
+      },
+      "remembered_mix": {
+        "people": 101,
+        "visual_appearance": 72,
+        "activity": 58,
+        "approximate_time": 58,
+        "recognition_ability": 40,
+        "color": 39,
+        "setting": 39,
+        "object": 39,
+        "story": 39,
+        "place": 35,
+        "situation": 32,
+        "existence": 31
+      },
+      "large_library_stated": 0,
+      "found_quickly": 0,
+      "object_mix": {
+        "family_person": 97,
+        "document_screenshot": 86,
+        "event_social": 69,
+        "travel_place": 62,
+        "medical": 53,
+        "physical_object": 25,
+        "unspecified_object": 12
+      },
+      "forgotten_mix": {
+        "don't explicitly state": 112,
+        "time precision": 90,
+        "name": 74,
+        "search keyword": 39,
+        "how it was originally found": 31,
+        "album / organisation": 30,
+        "exact wording": 28
+      }
+    },
+    "knows_exists_pct": 0.0,
+    "by_state": {
+      "recovery_dependent": 284,
+      "candidate_inspection": 120
+    },
+    "by_behavior": {
+      "": 404
+    },
+    "adjacent_exit": 341,
+    "unresolved_or_exit_downstream": 341,
+    "example_ids": [
+      "REC-0001",
+      "REC-0004",
+      "REC-0005",
+      "REC-0006",
+      "REC-0007"
+    ],
+    "after_exact_dup_removal": 404,
+    "after_near_dup_removal": 351
+  },
+  "impact": {
+    "eligible": 800,
+    "target": 404,
+    "target_pct": 50.5,
+    "target_with_effort_signal": 404,
+    "target_uncertain_stated": 120,
+    "target_found_with_effort_stated": 114,
+    "target_outcome_unknown": 0,
+    "exits_adjacent": 341,
+    "exits_failed_or_abandoned": 255
+  },
+  "independence": {
+    "object_class x memory_code": {
+      "chi2": 0.0,
+      "dof": 0,
+      "p": 1.0,
+      "cramers_v": NaN
+    },
+    "object_class x retrieval_state": {
+      "chi2": 8.8,
+      "dof": 18,
+      "p": 0.964,
+      "cramers_v": 0.061
+    },
+    "memory_code x retrieval_state": {
+      "chi2": 0.0,
+      "dof": 0,
+      "p": 1.0,
+      "cramers_v": NaN
+    },
+    "memory_code x behavior_code": {
+      "chi2": 0.0,
+      "dof": 0,
+      "p": 1.0,
+      "cramers_v": NaN
+    },
+    "source x retrieval_state": {
+      "chi2": 14.0,
+      "dof": 18,
+      "p": 0.73,
+      "cramers_v": 0.076
+    },
+    "source x memory_code": {
+      "chi2": 0.0,
+      "dof": 0,
+      "p": 1.0,
+      "cramers_v": NaN
+    },
+    "source x object_class": {
+      "chi2": 32.3,
+      "dof": 36,
+      "p": 0.647,
+      "cramers_v": 0.082
+    }
+  },
+  "incoherent_pairs": {
+    "n": 0,
+    "of_doc_object": 215,
+    "example": []
+  },
+  "quotes": {
+    "express": [],
+    "exit_": [],
+    "recovery": [],
+    "uncertain": [],
+    "inspection": [],
+    "time": [],
+    "abandon": [],
+    "recog": [],
+    "path": []
+  },
+  "behavior_groups": {
+    "First-attempt input strategies": {
+      "n": 0,
+      "of": 800,
+      "pct": 0.0,
+      "members": {
+        "B01": 0,
+        "B02": 0,
+        "B06": 0
+      },
+      "example_ids": []
+    },
+    "Date-based narrowing": {
+      "n": 0,
+      "of": 800,
+      "pct": 0.0,
+      "members": {
+        "B03": 0,
+        "B16": 0
+      },
+      "example_ids": []
+    },
+    "Reformulation (different or several related words)": {
+      "n": 0,
+      "of": 800,
+      "pct": 0.0,
+      "members": {
+        "B05": 0,
+        "B17": 0
+      },
+      "example_ids": []
+    },
+    "Switching strategy (terms/albums, person then browse, keywords then scroll)": {
+      "n": 0,
+      "of": 800,
+      "pct": 0.0,
+      "members": {
+        "B07": 0,
+        "B09": 0,
+        "B18": 0
+      },
+      "example_ids": []
+    },
+    "Manual inspection and browsing": {
+      "n": 0,
+      "of": 800,
+      "pct": 0.0,
+      "members": {
+        "B04": 0,
+        "B11": 0,
+        "B13": 0
+      },
+      "example_ids": []
+    },
+    "Outcome stated in the same sentence (similar-not-exact, several attempts)": {
+      "n": 0,
+      "of": 800,
+      "pct": 0.0,
+      "members": {
+        "B14": 0,
+        "B15": 0
+      },
+      "example_ids": []
+    },
+    "Exit (could not find, gave up and asked someone, other app/device)": {
+      "n": 0,
+      "of": 800,
+      "pct": 0.0,
+      "members": {
+        "B08": 0,
+        "B10": 0,
+        "B12": 0
+      },
+      "example_ids": []
+    }
+  },
+  "behavior_labels": {
+    "B01": "person place search",
+    "B02": "text in image search",
+    "B03": "date search too many",
+    "B04": "open results one by one",
+    "B05": "different wording",
+    "B06": "object keyword",
+    "B07": "switch terms albums",
+    "B08": "other device or app",
+    "B09": "person then browse",
+    "B10": "gave up asked someone",
+    "B11": "timeline manual",
+    "B12": "could not find",
+    "B13": "large thumbnail set",
+    "B14": "similar not exact",
+    "B15": "found after several attempts",
+    "B16": "date range compare",
+    "B17": "several related words",
+    "B18": "keywords then scroll"
+  },
+  "outcome_all": {
+    "found_quickly": 55,
+    "found_with_effort": 114,
+    "found_after_reformulation": 41,
+    "found_after_browsing": 129,
+    "similar_uncertain": 120,
+    "failed": 140,
+    "abandoned": 115,
+    "external_workaround": 86,
+    "unknown": 0
+  },
+  "object_judgement": {
+    "judgement_records": 308,
+    "stated_records": 492,
+    "judgement_objects": [
+      "a photo of my grandfather at the wedding",
+      "a photo of my grandparents' wedding album",
+      "a screenshot of a product I wanted",
+      "a yellow truck",
+      "my cousin at the concert",
+      "our Diwali family photo",
+      "the lamp I wanted to buy",
+      "the medicine box I photographed",
+      "the old meme I saved",
+      "the photo from when I was sick",
+      "the picture I sent to my doctor"
+    ],
+    "n_objects": 30
+  },
+  "decomposition": {
+    "D1": {
+      "breakdown": 0,
+      "indirect": 0,
+      "effort": 0,
+      "intact": 0,
+      "attempt": 0,
+      "condition": 594,
+      "breakdown_or_effort": 0,
+      "any_evidence": 0,
+      "no_evidence": 800,
+      "example_ids": {
+        "condition": [
+          "REC-0001",
+          "REC-0002",
+          "REC-0003"
+        ]
+      },
+      "name": "Remember",
+      "brief_question": "What information do people actually remember, and what have they forgotten?",
+      "user_behavior": "Holds partial context (people, place, story, look, roughly when) but lacks a precise identifier",
+      "product_outcome": "n/a: this is the precondition the case starts from (photo exists, memory is incomplete)",
+      "opportunity": "O6 Retrieval-path memory",
+      "proposed_measure": "Share of retrieval attempts that start with contextual clues but no precise identifier (date, name, album, exact keyword)"
+    },
+    "D2": {
+      "breakdown": 322,
+      "indirect": 0,
+      "effort": 0,
+      "intact": 0,
+      "attempt": 0,
+      "breakdown_or_effort": 322,
+      "any_evidence": 322,
+      "no_evidence": 478,
+      "example_ids": {
+        "breakdown": [
+          "REC-0006",
+          "REC-0008",
+          "REC-0009"
+        ]
+      },
+      "name": "Express",
+      "brief_question": "Is the user context-to-query translation what they remember?",
+      "user_behavior": "Turns memory into a query, filter or navigation step",
+      "product_outcome": "The input the product receives carries the clues the user actually holds",
+      "opportunity": "O1 Memory expression (with O2 Approximate-time narrowing and O8 Information discovery)",
+      "proposed_measure": "Clues the user can state when prompted versus clues present in the first query (research); first-query length and clue types (production)"
+    },
+    "D3": {
+      "breakdown": 0,
+      "indirect": 0,
+      "effort": 0,
+      "intact": 0,
+      "attempt": 0,
+      "breakdown_or_effort": 0,
+      "any_evidence": 0,
+      "no_evidence": 800,
+      "example_ids": {},
+      "name": "Understand & match",
+      "brief_question": "Does Google Photos fail to understand the clues they provide?",
+      "user_behavior": "Submits clues and inspects what comes back",
+      "product_outcome": "The intended photo appears among the candidates returned",
+      "opportunity": "O4 Contextual matching",
+      "proposed_measure": "Target-in-candidate-set rate for tasks with a known target (research); selected photo appearing on the first results page (production)"
+    },
+    "D4": {
+      "breakdown": 0,
+      "indirect": 0,
+      "effort": 0,
+      "intact": 0,
+      "attempt": 0,
+      "breakdown_or_effort": 0,
+      "any_evidence": 0,
+      "no_evidence": 800,
+      "example_ids": {},
+      "name": "Evaluate",
+      "brief_question": "Are potentially relevant results difficult to evaluate?",
+      "user_behavior": "Scans candidates and decides which one is the photo",
+      "product_outcome": "The user confirms the right photo, quickly and with confidence",
+      "opportunity": "O3 Candidate recognition / verification",
+      "proposed_measure": "Candidates inspected before confirmation, time to confirm, wrong-photo confirmations, stated confidence (research); open-and-return counts (production)"
+    },
+    "D5": {
+      "breakdown": 0,
+      "indirect": 0,
+      "effort": 0,
+      "intact": 0,
+      "attempt": 0,
+      "breakdown_or_effort": 0,
+      "any_evidence": 0,
+      "no_evidence": 800,
+      "example_ids": {},
+      "name": "Refine",
+      "brief_question": "Does the user struggle to refine an unsuccessful search?",
+      "user_behavior": "Reformulates, switches strategy, browses, asks someone, or stops",
+      "product_outcome": "A failed first attempt still ends in success, or in an informed stop",
+      "opportunity": "O5 Retrieval recovery",
+      "proposed_measure": "Success rate after reformulation, queries before success, abandonment after N unsuccessful queries (production); what prompted each change (research)"
+    },
+    "D6": {
+      "breakdown": 0,
+      "indirect": 0,
+      "effort": 0,
+      "intact": 0,
+      "attempt": 0,
+      "breakdown_or_effort": 0,
+      "any_evidence": 0,
+      "no_evidence": 800,
+      "example_ids": {},
+      "name": "Available",
+      "brief_question": "Is the photo in the searchable library at all?",
+      "user_behavior": "Asks another person, switches app or device, or gives up",
+      "product_outcome": "Retrieval is possible: the photo exists in the library the user is searching",
+      "opportunity": "O7 Corpus / access boundary",
+      "proposed_measure": "Share of unsuccessful retrievals where the photo is absent from the library (needs a library audit in research)"
+    }
+  },
+  "stage_questions": {
+    "REMEMBER": {
+      "question": "What does the user remember?",
+      "top_remembered": [
+        [
+          "people",
+          200
+        ],
+        [
+          "visual_appearance",
+          134
+        ],
+        [
+          "approximate_time",
+          126
+        ],
+        [
+          "activity",
+          119
+        ],
+        [
+          "story",
+          82
+        ]
+      ],
+      "top_lacking": [
+        [
+          "don't explicitly state",
+          206
+        ],
+        [
+          "time precision",
+          199
+        ],
+        [
+          "name",
+          149
+        ],
+        [
+          "search keyword",
+          64
+        ],
+        [
+          "album / organisation",
+          63
+        ]
+      ]
+    },
+    "EXPRESS": {
+      "question": "How does the user convert that memory into a search or action?",
+      "first_attempt": 0,
+      "date": 0,
+      "reformulation": 0,
+      "person_then_browse": 0,
+      "keywords_then_scroll": 0,
+      "barrier": 322
+    },
+    "MATCH": {
+      "question": "Does the product appear to surface plausible candidates?",
+      "candidates_surfaced": 0,
+      "too_many_results": 0,
+      "product_misread_stated": 0
+    },
+    "RECOGNIZE": {
+      "question": "Can the user identify the intended photo among candidates?",
+      "can_on_sight": 0,
+      "cannot_tell": 0,
+      "heavy_inspection": 0
+    },
+    "RECOVER": {
+      "question": "What does the user do after the first attempt does not work?",
+      "effort": 0,
+      "success_after_effort": 0,
+      "exits": 0
+    }
+  },
+  "evidence_index_n": {
+    "need:N1": 0,
+    "need:N2": 0,
+    "need:N3": 0,
+    "need:N4": 0,
+    "need:N5": 0,
+    "need:N6": 120,
+    "need:N7": 0,
+    "need:N8": 625,
+    "need:N9": 257,
+    "seg:SEG-1": 341,
+    "seg:SEG-2": 284,
+    "seg:SEG-3": 120,
+    "seg:SEG-4": 55,
+    "seg:SEG-T": 404,
+    "opp:O1": 322,
+    "opp:O2": 0,
+    "opp:O3": 0,
+    "opp:O4": 0,
+    "opp:O5": 0,
+    "opp:O6": 0,
+    "opp:O7": 0,
+    "opp:O8": 0,
+    "node:D1:breakdown": 0,
+    "node:D1:indirect": 0,
+    "node:D1:effort": 0,
+    "node:D1:intact": 0,
+    "node:D1:attempt": 0,
+    "node:D1:condition": 594,
+    "node:D2:breakdown": 322,
+    "node:D2:indirect": 0,
+    "node:D2:effort": 0,
+    "node:D2:intact": 0,
+    "node:D2:attempt": 0,
+    "node:D3:breakdown": 0,
+    "node:D3:indirect": 0,
+    "node:D3:effort": 0,
+    "node:D3:intact": 0,
+    "node:D3:attempt": 0,
+    "node:D4:breakdown": 0,
+    "node:D4:indirect": 0,
+    "node:D4:effort": 0,
+    "node:D4:intact": 0,
+    "node:D4:attempt": 0,
+    "node:D5:breakdown": 0,
+    "node:D5:indirect": 0,
+    "node:D5:effort": 0,
+    "node:D5:intact": 0,
+    "node:D5:attempt": 0,
+    "node:D6:breakdown": 0,
+    "node:D6:indirect": 0,
+    "node:D6:effort": 0,
+    "node:D6:intact": 0,
+    "node:D6:attempt": 0,
+    "claim:K01": 800,
+    "claim:K02": 594,
+    "claim:K03": 0,
+    "claim:K04": 322,
+    "claim:K05": 748,
+    "claim:K06": 0,
+    "claim:K07": 0,
+    "claim:K08": 0,
+    "claim:K09": 341,
+    "claim:K10": 0,
+    "claim:K11": 127,
+    "claim:K12": 404,
+    "claim:K13": 0,
+    "claim:K14": 0,
+    "hyp:H1": 322,
+    "hyp:H2": 0,
+    "hyp:H3": 0,
+    "hyp:H4": 0,
+    "hyp:H5": 0,
+    "hyp:H6": 282,
+    "hyp:H7": 800
+  }
+}
