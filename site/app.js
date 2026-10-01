@@ -284,7 +284,7 @@ page("segments", "Segments", "Stage 4", () => {
   `;
 });
 
-page("opportunities", "Opportunities", "Stages 5–6", () => {
+page("opps", "Opportunities", "Stages 5–6", () => {
   const s0 = D.stage0;
   const s1 = D.stage1;
   return `<h1>Opportunities</h1>
