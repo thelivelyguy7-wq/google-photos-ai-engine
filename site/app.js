@@ -50,6 +50,17 @@ function barRow(name, n, max, of, cls="") {
 const sortedEntries = (obj) => Object.entries(obj || {}).sort((a, b) => b[1] - a[1]);
 
 /* ---------- record drawer ---------- */
+function formatOutcome(val) {
+  if (val === "found_quickly") return "Found quickly";
+  if (["found_with_effort", "found_after_browsing", "found_after_reformulation"].includes(val)) return "With effort";
+  if (val === "similar_uncertain") return "Uncertain";
+  if (val === "failed") return "Failed";
+  if (val === "abandoned") return "Abandoned";
+  if (val === "external_workaround") return "Other app";
+  if (val === "unknown") return "Outcome Not Stated";
+  return val;
+}
+
 const drawer = document.getElementById("drawer");
 const scrim = document.getElementById("scrim");
 function recordCard(pos) {
@@ -59,7 +70,7 @@ function recordCard(pos) {
     .filter((c) => get(c))
     .map((c) => {
       let val = get(c).replace(/\|/g, ", ");
-      if (c === "outcome" && val === "unknown") val = "Outcome Not Stated";
+      if (c === "outcome") val = formatOutcome(val);
       if (val === "none named") val = "don't explicitly state";
       return `<span class="chip">${esc(`${c.split("_")[0]}: ${val}`)}</span>`;
     })
@@ -387,6 +398,20 @@ page("evidence", "Evidence explorer", "Rule 15", () => {
         return `<option value="${esc(v)}">${esc(text)}</option>`;
       }).join("")}</select>`;
   const uniq = (col) => [...new Set(D.records.rows.map((r) => r[COLS[col]]).filter(Boolean))].sort();
+
+  const outcomeDropdown = `
+    <select data-filter="outcome">
+      <option value="">Outcome: any</option>
+      <option value="found_quickly">Found quickly</option>
+      <option value="found_with_effort,found_after_browsing,found_after_reformulation">With effort</option>
+      <option value="similar_uncertain">Uncertain</option>
+      <option value="failed">Failed</option>
+      <option value="abandoned">Abandoned</option>
+      <option value="external_workaround">Other app</option>
+      <option value="unknown">Outcome Not Stated</option>
+    </select>
+  `;
+
   return `<h1>Evidence explorer</h1>
   <p class="lede">Every conclusion in this engine traces to records. Filter the corpus, or open any named group to see
   exactly which records sit behind it.</p>
@@ -397,7 +422,7 @@ page("evidence", "Evidence explorer", "Rule 15", () => {
     <input id="q" type="search" placeholder="Search verbatim text..." aria-label="Search record text">
     ${opts("relevance", uniq("relevance"))}
     ${opts("retrieval_state", uniq("retrieval_state"))}
-    ${opts("outcome", uniq("outcome"))}
+    ${outcomeDropdown}
     ${opts("object_class", uniq("object_class"))}
   </div>
   <p id="hits" class="muted"></p>
@@ -411,11 +436,13 @@ window.wireExplorer = function() {
   const results = document.getElementById("results"), hits = document.getElementById("hits");
   const apply = () => {
     const term = q.value.trim().toLowerCase();
-    const active = sels.filter((s) => s.value).map((s) => [COLS[s.dataset.filter], s.value]);
+    const active = sels.filter((s) => s.value).map((s) => [COLS[s.dataset.filter], s.value.split(',')]);
     const matched = [];
     D.records.rows.forEach((row, i) => {
       if (term && !row[COLS.raw_text].toLowerCase().includes(term)) return;
-      for (const [idx, val] of active) if (row[idx] !== val) return;
+      for (const [idx, valArr] of active) {
+        if (!valArr.includes(row[idx])) return;
+      }
       matched.push(i);
     });
     hits.textContent = `${matched.length} of ${D.records.rows.length} records match`;
