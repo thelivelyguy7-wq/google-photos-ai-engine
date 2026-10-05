@@ -48,8 +48,8 @@ Needs come from what records say users remember, lack and do, never from source.
 | **N5 Re-find a photo known to exist after losing the original path to it** | Re-find a photo known to exist | Knows it exists, cannot remember how it was originally found |  | no outcome stated; 0 unknown | 0 of 800 (0.0%); [RAW]  (all 0: `evidence_index.csv` → `need:N5`) |
 | **N6 Recognise/verify the right photo among plausible candidates** | Confirm the intended photo among plausible candidates | Sees many plausible results / a similar photo and cannot tell which is right |  | 120 similar-but-uncertain; 0 unknown | 120 of 800 (15.0%); [RAW] REC-0001, REC-0004 (all 120: `evidence_index.csv` → `need:N6`) |
 | **N7 Reach a photo the user says they would recognise but cannot narrow towards** | Reach a photo they say they would recognise | 'Can recognise it if I see it' but does not know how to narrow |  | no outcome stated; 0 unknown | 0 of 800 (0.0%); [RAW]  (all 0: `evidence_index.csv` → `need:N7`) |
-| **N8 Recover after a first attempt did not resolve** | Recover after the first attempt does not resolve | Any; defined by behaviour (reformulation, switching, giving up, other app) |  | 114 found-with-effort, 140 failed, 115 abandoned, 86 other-app/device workaround; 0 unknown | 625 of 800 (78.1%); [RAW] REC-0002, REC-0003 (all 625: `evidence_index.csv` → `need:N8`) |
-| **N9 Retrieve an information-bearing image (document, screenshot, prescription)** | Retrieve an information-bearing image | Object is a document, screenshot or prescription/medical image (memory text is generic; see limitation 3) |  | 38 found-with-effort, 37 similar-but-uncertain, 49 failed, 36 abandoned, 28 other-app/device workaround; 0 unknown | 257 of 800 (32.1%); [RAW] REC-0002, REC-0004 (all 257: `evidence_index.csv` → `need:N9`) |
+| **N8 Recover after a first attempt did not resolve** | Recover after the first attempt does not resolve | Any; defined by behaviour (reformulation, switching, giving up, other app) |  | 284 found-with-effort, 140 failed, 115 abandoned, 86 other-app/device workaround; 0 unknown | 625 of 800 (78.1%); [RAW] REC-0002, REC-0003 (all 625: `evidence_index.csv` → `need:N8`) |
+| **N9 Retrieve an information-bearing image (document, screenshot, prescription)** | Retrieve an information-bearing image | Object is a document, screenshot or prescription/medical image (memory text is generic; see limitation 3) |  | 91 found-with-effort, 37 similar-but-uncertain, 49 failed, 36 abandoned, 28 other-app/device workaround; 0 unknown | 257 of 800 (32.1%); [RAW] REC-0002, REC-0004 (all 257: `evidence_index.csv` → `need:N9`) |
 
 **Need detail: retrieval context and journey stages involved** (Stage 3 fields)
 
@@ -111,20 +111,20 @@ Segments are observable *retrieval states* stated in each record's single behavi
 | Segment | Objective definition | Records | Typical behaviour | Failure / effort | Outcome (stated) |
 |---|---|---|---|---|---|
 | **SEG-1 Exit-path retrievers** | Record states the user could not find the photo, gave up and asked someone else, or switched to another device/app (B12, B10, B08). | 341 of 800 (42.6%); [RAW] REC-0002, REC-0003 (all 341: `evidence_index.csv` → `seg:SEG-1`) |  | 341 with ≥1 severity signal; 251 with ≥2 | 140 failed, 115 abandoned, 86 other-app/device workaround; 0 unknown |
-| **SEG-2 Recovery-dependent retrievers** | Record states the user reformulated, switched strategy, fell back to browsing after a search, or needed several attempts (B05, B07, B09, B15, B17, B18). | 284 of 800 (35.5%); [RAW] REC-0005, REC-0006 (all 284: `evidence_index.csv` → `seg:SEG-2`) |  | 284 with ≥1 severity signal; 192 with ≥2 | 114 found-with-effort; 0 unknown |
+| **SEG-2 Recovery-dependent retrievers** | Record states the user reformulated, switched strategy, fell back to browsing after a search, or needed several attempts (B05, B07, B09, B15, B17, B18). | 284 of 800 (35.5%); [RAW] REC-0005, REC-0006 (all 284: `evidence_index.csv` → `seg:SEG-2`) |  | 284 with ≥1 severity signal; 192 with ≥2 | 284 found-with-effort; 0 unknown |
 | **SEG-3 Candidate-inspection-dependent retrievers** | Record states manual candidate inspection or an unmanageable/uncertain candidate set: date search with too many results, opening results one by one, manual timeline, very large thumbnail set, date-range comparison, similar-but-not-exact (B03, B04, B11, B13, B14, B16). | 120 of 800 (15.0%); [RAW] REC-0001, REC-0004 (all 120: `evidence_index.csv` → `seg:SEG-3`) |  | 120 with ≥1 severity signal; 64 with ≥2 | 120 similar-but-uncertain; 0 unknown |
 | **SEG-4 First-attempt-stage retrievers** | Record states one initial search (person+place, text-in-image, object keyword) with no reformulation, browsing or outcome (B01, B02, B06). | 55 of 800 (6.9%); [RAW] REC-0025, REC-0029 (all 55: `evidence_index.csv` → `seg:SEG-4`) |  | 3 with ≥1 severity signal; 3 with ≥2 | no outcome stated; 0 unknown |
-| **SEG-T Effortful-path retrievers (SEG-2 or SEG-3)** | Union of SEG-2 and SEG-3: attempted to retrieve a specific photo they expected to exist, lacked a precise identifier, and either changed strategy/repeated attempts or manually inspected a candidate set. | 404 of 800 (50.5%); [RAW] REC-0001, REC-0004 (all 404: `evidence_index.csv` → `seg:SEG-T`) |  | 404 with ≥1 severity signal; 256 with ≥2 | 114 found-with-effort, 120 similar-but-uncertain; 0 unknown |
+| **SEG-T Effortful-path retrievers (SEG-2 or SEG-3)** | Union of SEG-2 and SEG-3: attempted to retrieve a specific photo they expected to exist, lacked a precise identifier, and either changed strategy/repeated attempts or manually inspected a candidate set. | 404 of 800 (50.5%); [RAW] REC-0001, REC-0004 (all 404: `evidence_index.csv` → `seg:SEG-T`) |  | 404 with ≥1 severity signal; 256 with ≥2 | 284 found-with-effort, 120 similar-but-uncertain; 0 unknown |
 
 **Segment profile: what they remember, forget, do, and how it ended** (Stage 4) `[OBS]`
 
 | Segment | Remember | Forget | Do | Found quickly | Found with effort | Uncertain | Failed | Abandoned | Other-app workaround | Outcome Not Stated |
 |---|---|---|---|---|---|---|---|---|---|---|
 | SEG-1 | people 83, approximate time 58, visual appearance 56 | time precision 93, don't explicitly state 85, name 63 |  | 0 | 0 | 0 | 140 | 115 | 86 | 0 |
-| SEG-2 | people 68, visual appearance 54, activity 47 | don't explicitly state 84, time precision 53, name 50 |  | 0 | 114 | 0 | 0 | 0 | 0 | 0 |
+| SEG-2 | people 68, visual appearance 54, activity 47 | don't explicitly state 84, time precision 53, name 50 |  | 0 | 284 | 0 | 0 | 0 | 0 | 0 |
 | SEG-3 | people 33, approximate time 26, visual appearance 18 | time precision 37, don't explicitly state 28, name 24 |  | 0 | 0 | 120 | 0 | 0 | 0 | 0 |
-| SEG-4 | people 16, approximate time 10, activity 9 | time precision 16, name 12, don't explicitly state 9 |  | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
-| SEG-T | people 101, visual appearance 72, activity 58 | don't explicitly state 112, time precision 90, name 74 |  | 0 | 114 | 120 | 0 | 0 | 0 | 0 |
+| SEG-4 | people 16, approximate time 10, activity 9 | time precision 16, name 12, don't explicitly state 9 |  | 55 | 0 | 0 | 0 | 0 | 0 | 0 |
+| SEG-T | people 101, visual appearance 72, activity 58 | don't explicitly state 112, time precision 90, name 74 |  | 0 | 284 | 120 | 0 | 0 | 0 | 0 |
 
 **Severity signals by segment** (records carrying each signal) `[OBS]`
 
@@ -231,7 +231,7 @@ Opportunities are *where* retrieval could improve; they are not features and not
 - **Journey stage:** Express (from Remember) · **Decomposition node:** D2
 - **Frequency** `[OBS]`: 322 of 800 relevant records (40.2%); [RAW] REC-0006, REC-0008, REC-0009 (all 322: `evidence_index.csv` → `opp:O1`)
 - **Severity:** Signals come from the behaviour sentences of these records (reformulation, browsing, uncertainty), not from the barrier statement itself.
-- **Outcome:** 56 found-with-effort, 41 similar-but-uncertain, 53 failed, 39 abandoned, 35 other-app/device workaround; 0 unknown
+- **Outcome:** 138 found-with-effort, 41 similar-but-uncertain, 53 failed, 39 abandoned, 35 other-app/device workaround; 0 unknown
 - **Evidence example:** 
 - **User consequence** `[INTERP]`: Extra attempts or manual scanning; some stop.  **Product consequence** `[INTERP]`: A photo that exists and is recognisable may never be reached from the first query.
 - **Unknowns** `[UNKNOWN]`: Whether users hold richer memory than they express, or the memory is thin; whether failure is at input or at interpretation.
@@ -337,7 +337,7 @@ Records behind the selection `[OBS]`: O5 [RAW]  (all 0: `evidence_index.csv` →
 |---|---|
 | Objective definition | Records whose behaviour sentence is one of B03, B04, B05, B07, B09, B11, B13, B14, B15, B16, B17, B18 (recovery-dependent 284 + candidate-inspection 120). Shared precondition: imprecise memory of a specific photo. |
 | Dataset size | 404 of 800 (50.5%); 351 after removing near-duplicates |
-| Stated outcomes | 114 found-with-effort, 120 similar-but-uncertain; 0 unknown |
+| Stated outcomes | 284 found-with-effort, 120 similar-but-uncertain; 0 unknown |
 | Evidence | Express-barrier statements 179; 'would recognise on sight' 0; 'cannot tell which is right' 0; explicit 'knows the photo exists' 0 (0.0%). [RAW] REC-0001, REC-0004, REC-0005, REC-0006, REC-0007 (all 404: `evidence_index.csv` → `seg:SEG-T`) |
 | Why investigate | Frequency (largest); effort (strategy switching, browsing, large candidate sets, repeated attempts); outcome uncertainty (0 unknown, 120 uncertain); strategic relevance (retrieval is not clean for these users); researchability (recent attempts are rememberable and observable) |
 | Why not SEG-1 alone | Defined by outcome, so the corpus says nothing about what preceded it. Recruit SEG-1-like participants (failed/abandoned recently) as an adjacent probe. |

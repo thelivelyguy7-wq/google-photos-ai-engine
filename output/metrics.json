@@ -265,12 +265,12 @@
       "profile": {
         "n": 0,
         "outcomes": {
-          "found_with_effort": 0,
           "similar_uncertain": 0,
           "failed": 0,
           "abandoned": 0,
           "external_workaround": 0,
-          "unknown": 0
+          "unknown": 0,
+          "found_with_effort": 0
         },
         "express_barrier": 0,
         "recognition_retained": 0,
@@ -302,12 +302,12 @@
       "profile": {
         "n": 0,
         "outcomes": {
-          "found_with_effort": 0,
           "similar_uncertain": 0,
           "failed": 0,
           "abandoned": 0,
           "external_workaround": 0,
-          "unknown": 0
+          "unknown": 0,
+          "found_with_effort": 0
         },
         "express_barrier": 0,
         "recognition_retained": 0,
@@ -339,12 +339,12 @@
       "profile": {
         "n": 0,
         "outcomes": {
-          "found_with_effort": 0,
           "similar_uncertain": 0,
           "failed": 0,
           "abandoned": 0,
           "external_workaround": 0,
-          "unknown": 0
+          "unknown": 0,
+          "found_with_effort": 0
         },
         "express_barrier": 0,
         "recognition_retained": 0,
@@ -376,12 +376,12 @@
       "profile": {
         "n": 0,
         "outcomes": {
-          "found_with_effort": 0,
           "similar_uncertain": 0,
           "failed": 0,
           "abandoned": 0,
           "external_workaround": 0,
-          "unknown": 0
+          "unknown": 0,
+          "found_with_effort": 0
         },
         "express_barrier": 0,
         "recognition_retained": 0,
@@ -413,12 +413,12 @@
       "profile": {
         "n": 0,
         "outcomes": {
-          "found_with_effort": 0,
           "similar_uncertain": 0,
           "failed": 0,
           "abandoned": 0,
           "external_workaround": 0,
-          "unknown": 0
+          "unknown": 0,
+          "found_with_effort": 0
         },
         "express_barrier": 0,
         "recognition_retained": 0,
@@ -454,12 +454,12 @@
       "profile": {
         "n": 120,
         "outcomes": {
-          "found_with_effort": 0,
           "similar_uncertain": 120,
           "failed": 0,
           "abandoned": 0,
           "external_workaround": 0,
-          "unknown": 0
+          "unknown": 0,
+          "found_with_effort": 0
         },
         "express_barrier": 41,
         "recognition_retained": 0,
@@ -528,12 +528,12 @@
       "profile": {
         "n": 0,
         "outcomes": {
-          "found_with_effort": 0,
           "similar_uncertain": 0,
           "failed": 0,
           "abandoned": 0,
           "external_workaround": 0,
-          "unknown": 0
+          "unknown": 0,
+          "found_with_effort": 0
         },
         "express_barrier": 0,
         "recognition_retained": 0,
@@ -569,12 +569,12 @@
       "profile": {
         "n": 625,
         "outcomes": {
-          "found_with_effort": 114,
           "similar_uncertain": 0,
           "failed": 140,
           "abandoned": 115,
           "external_workaround": 86,
-          "unknown": 0
+          "unknown": 0,
+          "found_with_effort": 284
         },
         "express_barrier": 265,
         "recognition_retained": 0,
@@ -650,12 +650,12 @@
       "profile": {
         "n": 257,
         "outcomes": {
-          "found_with_effort": 38,
           "similar_uncertain": 37,
           "failed": 49,
           "abandoned": 36,
           "external_workaround": 28,
-          "unknown": 0
+          "unknown": 0,
+          "found_with_effort": 91
         },
         "express_barrier": 106,
         "recognition_retained": 0,
@@ -698,7 +698,7 @@
           "recognition_ability": 14
         },
         "large_library_stated": 0,
-        "found_quickly": 0,
+        "found_quickly": 16,
         "object_mix": {
           "document_screenshot": 161,
           "medical": 96
@@ -728,12 +728,12 @@
       "profile": {
         "n": 341,
         "outcomes": {
-          "found_with_effort": 0,
           "similar_uncertain": 0,
           "failed": 140,
           "abandoned": 115,
           "external_workaround": 86,
-          "unknown": 0
+          "unknown": 0,
+          "found_with_effort": 0
         },
         "express_barrier": 127,
         "recognition_retained": 0,
@@ -809,12 +809,12 @@
       "profile": {
         "n": 284,
         "outcomes": {
-          "found_with_effort": 114,
           "similar_uncertain": 0,
           "failed": 0,
           "abandoned": 0,
           "external_workaround": 0,
-          "unknown": 0
+          "unknown": 0,
+          "found_with_effort": 284
         },
         "express_barrier": 138,
         "recognition_retained": 0,
@@ -887,12 +887,12 @@
       "profile": {
         "n": 120,
         "outcomes": {
-          "found_with_effort": 0,
           "similar_uncertain": 120,
           "failed": 0,
           "abandoned": 0,
           "external_workaround": 0,
-          "unknown": 0
+          "unknown": 0,
+          "found_with_effort": 0
         },
         "express_barrier": 41,
         "recognition_retained": 0,
@@ -965,12 +965,12 @@
       "profile": {
         "n": 55,
         "outcomes": {
-          "found_with_effort": 0,
           "similar_uncertain": 0,
           "failed": 0,
           "abandoned": 0,
           "external_workaround": 0,
-          "unknown": 0
+          "unknown": 0,
+          "found_with_effort": 0
         },
         "express_barrier": 16,
         "recognition_retained": 0,
@@ -1005,7 +1005,7 @@
           "recognition_ability": 3
         },
         "large_library_stated": 0,
-        "found_quickly": 0,
+        "found_quickly": 55,
         "object_mix": {
           "event_social": 12,
           "document_screenshot": 11,
@@ -1038,12 +1038,12 @@
       "profile": {
         "n": 404,
         "outcomes": {
-          "found_with_effort": 114,
           "similar_uncertain": 120,
           "failed": 0,
           "abandoned": 0,
           "external_workaround": 0,
-          "unknown": 0
+          "unknown": 0,
+          "found_with_effort": 284
         },
         "express_barrier": 179,
         "recognition_retained": 0,
@@ -1118,12 +1118,12 @@
       "profile": {
         "n": 322,
         "outcomes": {
-          "found_with_effort": 56,
           "similar_uncertain": 41,
           "failed": 53,
           "abandoned": 39,
           "external_workaround": 35,
-          "unknown": 0
+          "unknown": 0,
+          "found_with_effort": 138
         },
         "express_barrier": 322,
         "recognition_retained": 0,
@@ -1161,7 +1161,7 @@
           "activity": 56
         },
         "large_library_stated": 0,
-        "found_quickly": 0,
+        "found_quickly": 16,
         "object_mix": {
           "family_person": 71,
           "document_screenshot": 70,
@@ -1187,12 +1187,12 @@
       "profile": {
         "n": 0,
         "outcomes": {
-          "found_with_effort": 0,
           "similar_uncertain": 0,
           "failed": 0,
           "abandoned": 0,
           "external_workaround": 0,
-          "unknown": 0
+          "unknown": 0,
+          "found_with_effort": 0
         },
         "express_barrier": 0,
         "recognition_retained": 0,
@@ -1224,12 +1224,12 @@
       "profile": {
         "n": 0,
         "outcomes": {
-          "found_with_effort": 0,
           "similar_uncertain": 0,
           "failed": 0,
           "abandoned": 0,
           "external_workaround": 0,
-          "unknown": 0
+          "unknown": 0,
+          "found_with_effort": 0
         },
         "express_barrier": 0,
         "recognition_retained": 0,
@@ -1261,12 +1261,12 @@
       "profile": {
         "n": 0,
         "outcomes": {
-          "found_with_effort": 0,
           "similar_uncertain": 0,
           "failed": 0,
           "abandoned": 0,
           "external_workaround": 0,
-          "unknown": 0
+          "unknown": 0,
+          "found_with_effort": 0
         },
         "express_barrier": 0,
         "recognition_retained": 0,
@@ -1298,12 +1298,12 @@
       "profile": {
         "n": 0,
         "outcomes": {
-          "found_with_effort": 0,
           "similar_uncertain": 0,
           "failed": 0,
           "abandoned": 0,
           "external_workaround": 0,
-          "unknown": 0
+          "unknown": 0,
+          "found_with_effort": 0
         },
         "express_barrier": 0,
         "recognition_retained": 0,
@@ -1335,12 +1335,12 @@
       "profile": {
         "n": 0,
         "outcomes": {
-          "found_with_effort": 0,
           "similar_uncertain": 0,
           "failed": 0,
           "abandoned": 0,
           "external_workaround": 0,
-          "unknown": 0
+          "unknown": 0,
+          "found_with_effort": 0
         },
         "express_barrier": 0,
         "recognition_retained": 0,
@@ -1372,12 +1372,12 @@
       "profile": {
         "n": 0,
         "outcomes": {
-          "found_with_effort": 0,
           "similar_uncertain": 0,
           "failed": 0,
           "abandoned": 0,
           "external_workaround": 0,
-          "unknown": 0
+          "unknown": 0,
+          "found_with_effort": 0
         },
         "express_barrier": 0,
         "recognition_retained": 0,
@@ -1409,12 +1409,12 @@
       "profile": {
         "n": 0,
         "outcomes": {
-          "found_with_effort": 0,
           "similar_uncertain": 0,
           "failed": 0,
           "abandoned": 0,
           "external_workaround": 0,
-          "unknown": 0
+          "unknown": 0,
+          "found_with_effort": 0
         },
         "express_barrier": 0,
         "recognition_retained": 0,
@@ -1535,12 +1535,12 @@
     "profile": {
       "n": 404,
       "outcomes": {
-        "found_with_effort": 114,
         "similar_uncertain": 120,
         "failed": 0,
         "abandoned": 0,
         "external_workaround": 0,
-        "unknown": 0
+        "unknown": 0,
+        "found_with_effort": 284
       },
       "express_barrier": 179,
       "recognition_retained": 0,

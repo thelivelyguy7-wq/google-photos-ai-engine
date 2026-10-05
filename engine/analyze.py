@@ -91,7 +91,8 @@ def profile(mask, r):
     sub = r[mask]
     n = len(sub)
     out = {k: int((sub["outcome"] == k).sum()) for k in
-           ["found_with_effort", "similar_uncertain", "failed", "abandoned", "external_workaround", "unknown"]}
+           ["similar_uncertain", "failed", "abandoned", "external_workaround", "unknown"]}
+    out["found_with_effort"] = int(sub["outcome"].isin(["found_with_effort", "found_after_browsing", "found_after_reformulation"]).sum())
     return dict(
         n=n, outcomes=out,
         express_barrier=int(sub["express_barrier"].sum()),
@@ -105,7 +106,7 @@ def profile(mask, r):
         stage_counts={st: int(sub["journey_stages"].str.contains(st).sum()) for st in STAGES},
         remembered_mix=sub["remembered"].replace("", "don't explicitly state").str.split("|").explode().value_counts().to_dict(),
         large_library_stated=int(_in(sub["closer_code"], "C02").sum()),
-        found_quickly=0,
+        found_quickly=int((sub["outcome"] == "found_quickly").sum()),
         object_mix=sub["object_class"].value_counts().to_dict(),
         forgotten_mix=sub["forgotten_family"].replace("", "don't explicitly state").str.split("|").explode().value_counts().to_dict(),
     )

@@ -249,13 +249,12 @@ page("segments", "Segments", "Stage 4", () => {
   <h2>Definition and outcomes</h2>
   ${table(["Segment", "Objective definition", "Records", "Found quickly", "With effort", "Uncertain", "Failed", "Abandoned", "Other app", "Outcome Not Stated"],
     [...four, target].map(row))}
-  <h2>What they remember, forget and do ${OBS}</h2>
-  ${table(["Segment", "Remembers", "Lacks", "Most common behaviours"], [...four, target].map(([k, v]) => {
+  <h2>What they remember, What they lack ${OBS}</h2>
+  ${table(["Segment", "Remembers", "Lacks"], [...four, target].map(([k, v]) => {
     const p = v.profile;
     return [esc(k.split(" ")[0]),
       sortedEntries(p.remembered_mix).slice(0, 3).map(([a, b]) => `${human(a)} ${b}`).join(", "),
-      sortedEntries(p.forgotten_mix).slice(0, 3).map(([a, b]) => `${esc(a)} ${b}`).join(", "),
-      p.top_behaviors.map(([a, b]) => `${esc(human(a))} ${b}`).join("; ")];
+      sortedEntries(p.forgotten_mix).slice(0, 3).map(([a, b]) => `${esc(a)} ${b}`).join(", ")];
   }))}
   <h2>Severity signals by segment ${OBS}</h2>
   ${table(["Segment", ...signals.map(human)], [...four, target].map(([k, v]) =>
