@@ -33,12 +33,12 @@ function table(headers, rows, opts = {}) {
   return `<table${opts.id ? ` id="${opts.id}"` : ""}><thead><tr>${head}</tr></thead><tbody>${body}</tbody></table>`;
 }
 
-function stat(n, lab, key, cls="") {
+function stat(n, lab, key, cls = "") {
   const value = key ? ev(key, n) : esc(String(n));
   return `<div class="stat ${cls}"><div class="n">${value}</div><div class="lab">${esc(lab)}</div></div>`;
 }
 
-function barRow(name, n, max, of, cls="") {
+function barRow(name, n, max, of, cls = "") {
   const w = max ? Math.round((100 * n) / max) : 0;
   return `
     <div class="progress-bar-container">
@@ -153,10 +153,10 @@ page("insights", "Insights", "Stages 1–3", () => {
   const s1 = D.stage1;
   const remembered = sortedEntries(s1.remembered), lacking = sortedEntries(s1.forgotten_family);
   const maxR = remembered[0][1], maxL = lacking[0][1];
-  
+
   const objects = sortedEntries(s1.object_class);
   const maxO = objects[0][1];
-  
+
   const retrieval = sortedEntries(s1.retrieval_state);
   const maxRet = retrieval[0][1];
 
@@ -176,11 +176,11 @@ page("insights", "Insights", "Stages 1–3", () => {
       <h3 style="margin-top:0;">2. How do users formulate searches?</h3>
       <p class="muted">When memory is incomplete, users often exit entirely or rely on complex recovery strategies.</p>
       ${retrieval.map(([a, b]) => {
-        let label = a === "exit_path" ? "Give up / Exit" : 
-                    a === "recovery_dependent" ? "Switch strategy / Reformulate" : 
-                    a === "candidate_inspection" ? "Manual browsing / Timeline" : "Single initial query";
-        return barRow(label, b, maxRet, REL, a === "exit_path" ? "danger" : a === "first_attempt" ? "success" : "warn");
-      }).join("")}
+    let label = a === "exit_path" ? "Give up / Exit" :
+      a === "recovery_dependent" ? "Switch strategy / Reformulate" :
+        a === "candidate_inspection" ? "Manual browsing / Timeline" : "Single initial query";
+    return barRow(label, b, maxRet, REL, a === "exit_path" ? "danger" : a === "first_attempt" ? "success" : "warn");
+  }).join("")}
     </div>
   </div>
 
@@ -205,8 +205,8 @@ page("insights", "Insights", "Stages 1–3", () => {
   ${table(["Need", "User goal", "Memory pattern", "Records", "Stated outcomes"], Object.entries(D.needs).map(([k, v]) => {
     const code = k.split(" ")[0], t = D.narrative.needs[code] || ["", ""];
     return [`<strong>${esc(code)}</strong> ${esc(k.slice(code.length + 1))}`, esc(t[0]), esc(t[1]),
-      ev("need:" + code, v.n, REL), Object.entries(v.profile.outcomes).filter(([a, b]) => b && a !== "unknown")
-        .map(([a, b]) => `${b} ${human(a)}`).join(", ") || "<span class='muted'>Outcome Not Stated</span>"];
+    ev("need:" + code, v.n, REL), Object.entries(v.profile.outcomes).filter(([a, b]) => b && a !== "unknown")
+      .map(([a, b]) => `${b} ${human(a)}`).join(", ") || "<span class='muted'>Outcome Not Stated</span>"];
   }))}
 
   `;
@@ -214,10 +214,10 @@ page("insights", "Insights", "Stages 1–3", () => {
 
 page("journey", "Journey & Decomposition", "Stage 2", () => {
   const DC = D.decomposition, NODES = D.narrative.decomposition_nodes;
-  
+
   const J = D.journey;
   const INTERP = `<span class="chip obs">Interpretation</span>`;
-  
+
   return `<h1>Retrieval Journey</h1>
   
   <h2>Decomposition of Successful Retrieval</h2>
@@ -247,12 +247,12 @@ page("segments", "Segments", "Stage 4", () => {
   const row = ([k, v]) => {
     const code = k.split(" ")[0], p = v.profile;
     return [`<strong>${esc(code)}</strong> ${esc(k.slice(code.length + 1))}`, esc(defs[code]),
-      ev("seg:" + code, v.n, REL), ...outcomeCells(p)];
+    ev("seg:" + code, v.n, REL), ...outcomeCells(p)];
   };
   const OBS = '<span class="chip obs">Observation</span>';
   const INTERP = '<span class="chip obs">Interpretation</span>';
-  const label = (text, cls="obs") => `<span class="chip ${cls}">${text}</span>`;
-  
+  const label = (text, cls = "obs") => `<span class="chip ${cls}">${text}</span>`;
+
   return `<h1>Behavioural segments</h1>
   <p class="lede">Segments are the retrieval state each record states, so the four are mutually exclusive and sum to
   ${REL}. All share one precondition: a specific photo the user expects to exist, remembered imprecisely.</p>
@@ -262,14 +262,14 @@ page("segments", "Segments", "Stage 4", () => {
     [...four, target].map(row))}
   <h2>What they remember, What they lack ${OBS}</h2>
   ${table(["Segment", "Remembers", "Lacks"], [...four, target].map(([k, v]) => {
-    const p = v.profile;
-    return [esc(k.split(" ")[0]),
+      const p = v.profile;
+      return [esc(k.split(" ")[0]),
       sortedEntries(p.remembered_mix).slice(0, 3).map(([a, b]) => `${human(a)} ${b}`).join(", "),
       sortedEntries(p.forgotten_mix).slice(0, 3).map(([a, b]) => `${esc(a)} ${b}`).join(", ")];
-  }))}
+    }))}
   <h2>Severity signals by segment ${OBS}</h2>
   ${table(["Segment", ...signals.map(human)], [...four, target].map(([k, v]) =>
-    [esc(k.split(" ")[0]), ...signals.map((s) => v.profile.signal_counts[s] || 0)]))}
+      [esc(k.split(" ")[0]), ...signals.map((s) => v.profile.signal_counts[s] || 0)]))}
   <p class="muted">${INTERP} Retrieval state is defined by the sentence that carries these signals, so "every member
   shows a signal" is definitional inside the first three segments, not a finding. The informative contrast is that
   first-attempt records carry almost none, and that expression barriers are spread evenly across all four.</p>
@@ -285,12 +285,12 @@ page("segments", "Segments", "Stage 4", () => {
   <h2>SEGMENT × JOURNEY Matrix</h2>
   <p class="muted">Mapping the behavioral segments against the stages of the retrieval journey to identify where friction occurs.</p>
   ${table(["Segment", "Remember", "Express", "Match", "Recognize", "Recover"], [
-    ["<strong>SEG-1</strong><br><small class='muted'>Keyword Requirements</small>", "Medium", "High", "High", "NA", "Low"],
-    ["<strong>SEG-2</strong><br><small class='muted'>Strategy Switching</small>", "Medium", "High", "High", "NA", "High"],
-    ["<strong>SEG-3</strong><br><small class='muted'>Manual Inspection</small>", "Medium", "Medium", "High", "High", "NA"],
-    ["<strong>SEG-4</strong><br><small class='muted'>Single Initial Attempt</small>", "Medium", "Low", "Low", "Low", "NA"],
-    ["<strong style='color:var(--accent);'>SEG-T</strong><br><small class='muted'>The Effortful Path</small>", "Medium", "High", "High", "High", "High"]
-  ])}
+        ["<strong>SEG-1</strong><br><small class='muted'>Keyword Requirements</small>", "Medium", "High", "High", "NA", "Low"],
+        ["<strong>SEG-2</strong><br><small class='muted'>Strategy Switching</small>", "Medium", "High", "High", "NA", "High"],
+        ["<strong>SEG-3</strong><br><small class='muted'>Manual Inspection</small>", "Medium", "Medium", "High", "High", "NA"],
+        ["<strong>SEG-4</strong><br><small class='muted'>Single Initial Attempt</small>", "Medium", "Low", "Low", "Low", "NA"],
+        ["<strong style='color:var(--accent);'>SEG-T</strong><br><small class='muted'>The Effortful Path</small>", "Medium", "High", "High", "High", "High"]
+      ])}
   `;
 });
 
@@ -429,7 +429,7 @@ page("evidence", "Evidence explorer", "Rule 15", () => {
   <div id="results"></div>`;
 });
 
-window.wireExplorer = function() {
+window.wireExplorer = function () {
   const q = document.getElementById("q");
   if (!q) return;
   const sels = [...document.querySelectorAll("[data-filter]")];
@@ -496,11 +496,11 @@ async function askAI(question) {
   if (!question) return;
   const input = document.getElementById('aiInput');
   const responseDiv = document.getElementById('aiResponse');
-  
+
   if (input) input.value = question;
   responseDiv.style.display = 'block';
   responseDiv.innerHTML = '<span class="loading">Generating answer...</span>';
-  
+
   try {
     const res = await fetch('http://localhost:8080/api/ask', {
       method: 'POST',
